@@ -1,6 +1,6 @@
 import './App.css';
 import axios from 'axios'
-import { useEffect,useState } from 'react'
+import { useState } from 'react'
 import Movie from './Movie'
 import Navbar from './Navbar';
 function App() {
@@ -13,7 +13,7 @@ function App() {
       url: 'https://imdb8.p.rapidapi.com/auto-complete',
       params: {q: movieInput},
       headers: {
-        'x-rapidapi-key': '7d85a3a34cmsh6a60592a3f13380p128f90jsn3e7adf6321f0',
+        'x-rapidapi-key': REACT_APP_SECRET_KEY,
         'x-rapidapi-host': 'imdb8.p.rapidapi.com'
       }
     };
