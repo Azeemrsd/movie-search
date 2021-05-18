@@ -13,7 +13,7 @@ function App() {
       url: 'https://imdb8.p.rapidapi.com/auto-complete',
       params: {q: movieInput},
       headers: {
-        'x-rapidapi-key': REACT_APP_SECRET_KEY,
+        'x-rapidapi-key': process.env.REACT_APP_SECRET_KEY,
         'x-rapidapi-host': 'imdb8.p.rapidapi.com'
       }
     };
